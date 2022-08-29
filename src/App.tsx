@@ -1,5 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "styles/globalStyles";
+import theme from "styles/theme";
+
+import Header from "components/layout/Header";
+import Promotion from "pages/Promotion";
+
 function App() {
-  return <div className="App">앱</div>;
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Promotion />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
 
 export default App;
