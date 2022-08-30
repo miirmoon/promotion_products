@@ -1,5 +1,6 @@
 import { apiGetPromotionTags } from "apis/promotion";
-import { useEffect, useState } from "react";
+import useSwipe from "hooks/useSwipe";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { IPromotionTag } from "types/IPromotion";
 
@@ -8,6 +9,9 @@ export default function PromotionTabs(props: {
   onClick: Function;
 }) {
   const [tags, setTags] = useState<IPromotionTag[]>([]);
+
+  const tagsRef = useRef<HTMLUListElement>(null);
+  useSwipe(tagsRef);
 
   useEffect(() => {
     apiGetPromotionTags().then((res) => {
@@ -18,7 +22,7 @@ export default function PromotionTabs(props: {
 
   return (
     <TabBox>
-      <Tabs>
+      <Tabs ref={tagsRef}>
         <Tab isSelected={props.select === -1} onClick={() => props.onClick(-1)}>
           전체
         </Tab>
@@ -46,7 +50,9 @@ const TabBox = styled.div`
 `;
 
 const Tabs = styled.ul`
+  width: 100%;
   display: flex;
+  transform: translate(0, 0);
 `;
 
 const Tab = styled.li<{ isSelected?: boolean }>`
