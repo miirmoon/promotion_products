@@ -8,14 +8,16 @@
 
 - 메뉴 좌우 스크롤, 메뉴 클릭 시 데이터 필터링, 클릭된 메뉴 on/off 표시
 - 스크롤을 이용한 리스트 페이징 처리(10개씩)
-  ![실행화면](https://user-images.githubusercontent.com/81166378/187462801-d1a299b0-fb66-49e5-97a0-21a707d06b4c.gif)
+
+  > ![실행화면](https://user-images.githubusercontent.com/81166378/187462801-d1a299b0-fb66-49e5-97a0-21a707d06b4c.gif)
 
 - 화면 해상도에 따라 리스트 배열 변경
+
   > 태블릿
   > ![태블릿](https://user-images.githubusercontent.com/81166378/187465030-0fb5852b-9645-485e-8645-a86c984db10a.png)
 
-> PC
-> ![PC](https://user-images.githubusercontent.com/81166378/187464430-9b53eb8b-a84e-4b1e-beca-8fb2d9b7471f.png)
+  > PC
+  > ![PC](https://user-images.githubusercontent.com/81166378/187464430-9b53eb8b-a84e-4b1e-beca-8fb2d9b7471f.png)
 
 ## 🛠 사용 기술
 
