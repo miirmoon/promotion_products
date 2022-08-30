@@ -60,7 +60,7 @@ const Tab = styled.li<{ isSelected?: boolean }>`
   white-space: nowrap;
   color: ${(props) =>
     props.isSelected ? props.theme.colors.black : props.theme.colors.grey15};
-  font-size: ${(props) => props.theme.fontSize.small};
+  font-size: ${(props) => props.theme.fontSize.normal};
   font-weight: ${(props) =>
     props.isSelected
       ? props.theme.fontWeight.bold

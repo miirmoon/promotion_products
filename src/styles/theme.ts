@@ -35,7 +35,7 @@ const boxSize = {
   large: "25px",
   medium: "20px",
   normal: "16px",
-  small: "13px",
+  small: "14px",
   micro: "10px",
 };
 
