@@ -80,7 +80,7 @@
     },
     {
       "id": 5,
-      "image": "https://cdn.pixabay.com/photo/2010/12/13/10/25/canape-2802_960_720.jpg",
+      "image": "https://cdn.pixabay.com/photo/2013/07/19/00/18/seafood-165220__340.jpg",
       "title": "영광 참굴비",
       "price": [39800, 29980],
       "salePrice": [19900, 14990],
@@ -92,7 +92,7 @@
     },
     {
       "id": 6,
-      "image": "https://cdn.pixabay.com/photo/2010/12/13/10/25/canape-2802_960_720.jpg",
+      "image": "https://cdn.pixabay.com/photo/2016/12/30/04/26/restaurant-1939958__340.jpg",
       "title": "손질 제주 은갈치",
       "price": [39980],
       "salePrice": [31984],
@@ -164,7 +164,7 @@
     },
     {
       "id": 12,
-      "image": "https://cdn.pixabay.com/photo/2017/12/03/12/38/medicine-2994788_960_720.jpg",
+      "image": "https://cdn.pixabay.com/photo/2017/03/07/14/26/crab-2124136__340.jpg",
       "title": "꽃게",
       "price": [],
       "salePrice": [],
@@ -178,27 +178,27 @@
     },
     {
       "id": 13,
-      "image": "https://cdn.pixabay.com/photo/2017/09/04/18/39/coffee-2714970_960_720.jpg",
-      "title": "동서 아이스커피 전품목",
-      "price": [],
-      "salePrice": [],
-      "adviceTags": ["상품권 증정"],
+      "image": "https://cdn.pixabay.com/photo/2015/12/12/14/57/giant-rubber-bear-1089612__340.jpg",
+      "title": "삼립 탱글탱글제리뽀 10입",
+      "price": [5180],
+      "salePrice": [2850],
+      "adviceTags": [],
       "discountTags": [],
-      "likeCount": 589,
-      "commentCount": 195,
+      "likeCount": 440,
+      "commentCount": 1156,
       "promotionId": 1
     },
     {
       "id": 14,
-      "image": "https://cdn.pixabay.com/photo/2014/07/10/05/00/nuts-388785_960_720.jpg",
-      "title": "HBAF 시즈닝 아몬드/믹스넛/땅콩/병아리콩",
+      "image": "https://cdn.pixabay.com/photo/2012/03/04/01/02/baby-22199__340.jpg",
+      "title": "디펜드 시니어패드",
       "price": [],
       "salePrice": [],
-      "adviceTags": ["※동일가격 교차구매 가능", "1+1"],
+      "adviceTags": ["2만원 구매 시 4천원 상품권 증정", "30% 할인"],
       "discountTags": [],
-      "likeCount": 484,
-      "commentCount": 67,
-      "promotionId": 2
+      "likeCount": 30,
+      "commentCount": 54,
+      "promotionId": 4
     },
     {
       "id": 15,

@@ -12,6 +12,7 @@ export default function Header() {
 }
 
 const HeaderBox = styled.header`
+  z-index: 99;
   position: fixed;
   top: 0;
   left: 0;
