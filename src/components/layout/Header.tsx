@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const pageTitle: { [key: string]: string } = {
-  "/": "금주의 전단광고",
+  "/promotion_products": "금주의 전단광고",
 };
 
 export default function Header() {

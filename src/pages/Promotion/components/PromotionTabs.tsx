@@ -16,7 +16,6 @@ export default function PromotionTabs(props: {
   useEffect(() => {
     apiGetPromotionTags().then((res) => {
       setTags(res);
-      console.log(res);
     });
   }, []);
 

@@ -1,8 +1,8 @@
 import { RefObject, useEffect } from "react";
 
 export default function useSwipe(swipeRef: RefObject<HTMLElement>) {
-  const listClientWidth = swipeRef.current ? swipeRef.current.clientWidth : 0;
-  const listScrollWidth = swipeRef.current ? swipeRef.current.scrollWidth : 0;
+  // const listClientWidth = swipeRef.current ? swipeRef.current.clientWidth : 0;
+  // const listScrollWidth = swipeRef.current ? swipeRef.current.scrollWidth : 0;
 
   let isSwiping = false;
   let startX = 0;
@@ -56,8 +56,6 @@ export default function useSwipe(swipeRef: RefObject<HTMLElement>) {
 
     isSwiping = false;
     startPoint = getTranslateX();
-
-    console.log(listClientWidth, listScrollWidth, startPoint);
 
     if (startPoint > 0) {
       setTranslateX(0);
