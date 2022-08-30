@@ -20,4 +20,5 @@ const HeaderBox = styled.header`
   font-weight: ${(props) => props.theme.fontWeight.bold};
   text-align: center;
   line-height: ${(props) => props.theme.boxSize.header};
+  background-color: ${(props) => props.theme.colors.white};
 `;

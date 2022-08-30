@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding-top: ${(props) => props.theme.boxSize.header};
     font-size: ${(props) => props.theme.fontSize.normal};
+    line-height: 1.375rem;
   }
 
   button {
@@ -44,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: ${(props) => props.theme.colors.grey15};
+    background-color: ${(props) => props.theme.colors.grey05};
   }
 
   ::-webkit-scrollbar-track {

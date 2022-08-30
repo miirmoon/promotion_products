@@ -8,16 +8,16 @@ const colors = {
   grey10: "#9e9e9e",
   grey15: "#767676",
   grey20: "#575757",
-  blue: "##4774cf",
+  blue: "#4774cf",
   yellow: "#FFC61C",
-  red: "##db392e",
+  red: "#db392e",
 };
 
 const fontSize = {
   large: "23px",
   medium: "17px",
-  normal: "14px",
-  small: "12px",
+  normal: "15px",
+  small: "13px",
   micro: "10px",
 };
 
@@ -47,8 +47,9 @@ const shadow = {
 
 /** device size */
 const mediaSize = {
-  minMobile: "320px",
-  mobile: "420px",
+  mobile: "425px",
+  tablet: "768px",
+  pc: "1024px",
 };
 
 const theme: DefaultTheme = {
