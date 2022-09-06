@@ -1,14 +1,8 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-
-interface IIntersectOption {
-  root: null;
-  rootMargin: string;
-  threshold: number;
-}
+import { useEffect, useRef, useState } from "react";
 
 export default function useIntersectionObserver(
   onIntersect: Function,
-  option: IIntersectOption
+  option?: IntersectionObserverInit
 ) {
   const [ref, setRef] = useState<HTMLElement | null>(null);
   const refObserver = useRef<IntersectionObserver | null>(null);
