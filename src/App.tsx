@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Promotion />} />
+          <Route path={process.env.PUBLIC_URL + "/"} element={<Promotion />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

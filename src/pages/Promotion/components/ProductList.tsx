@@ -27,7 +27,6 @@ export default function ProductList(props: { select: number }) {
   useEffect(() => {
     apiGetPromotionProducts().then((res) => {
       setAllProducts(res);
-      console.log(res);
     });
   }, []);
 
@@ -37,7 +36,6 @@ export default function ProductList(props: { select: number }) {
 
   const handlePage = () => {
     setCurrentPage((prev) => prev + 1);
-    console.log(currentPage);
   };
 
   const setBottom = useIntersectionObserver(handlePage, {

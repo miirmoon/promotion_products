@@ -16,13 +16,11 @@ export default function Product(props: { product: IPromotionProduct }) {
           <InfoPrice>{insertCommas(props.product.price).join("/")}</InfoPrice>
         )}
         {props.product.salePrice.length > 0 && (
-          <InfoContent fontSize={theme.fontSize.medium}>
+          <InfoSalePrice>
             {insertCommas(props.product.salePrice).join("/")}원
-          </InfoContent>
+          </InfoSalePrice>
         )}
-        <InfoContent fontSize={theme.fontSize.small}>
-          {props.product.title}
-        </InfoContent>
+        <InfoContent>{props.product.title}</InfoContent>
         <TagBox>
           {props.product.adviceTags.map((tag, i) => (
             <ChipButton
@@ -81,15 +79,20 @@ const TagBox = styled.div`
   }
 `;
 
-const InfoContent = styled.div<{ fontSize: string }>`
-  margin-bottom: 3px;
-  font-size: ${(props) => props.fontSize};
-  font-weight: ${(props) => props.theme.fontWeight.bold};
-`;
-
 const InfoPrice = styled.div`
   color: ${(props) => props.theme.colors.grey15};
   font-size: ${(props) => props.theme.fontSize.small};
   font-weight: ${(props) => props.theme.fontWeight.bold};
   text-decoration: line-through;
+`;
+
+const InfoSalePrice = styled.div`
+  margin-bottom: 3px;
+  font-size: ${(props) => props.theme.fontSize.medium};
+  font-weight: ${(props) => props.theme.fontWeight.bold};
+`;
+
+const InfoContent = styled.div`
+  margin-bottom: 3px;
+  font-size: ${(props) => props.theme.fontSize.normal};
 `;

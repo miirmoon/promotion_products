@@ -1,14 +1,30 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
+import NanumSquareR from "styles/fonts/NanumSquareR.woff";
+import NotoSansKR from "styles/fonts/NotoSansKR-Regular.otf";
+
 const GlobalStyle = createGlobalStyle`
   ${reset}
+
+  @font-face {
+    font-family: "NanumSquareR";
+    src: local("NanumSquareR"), url(${NanumSquareR}) format('woff');
+  }
+
+  @font-face {
+    font-family: "Noto Sans KR";
+    src: local("NotoSansKR"), url(${NotoSansKR}) format('woff2'),
+      local("NotoSansKR"), url(${NotoSansKR}) format('woff'),
+      local("NotoSansKR"), url(${NotoSansKR}) format('truetype');
+  }
 
   * {
     box-sizing: border-box;
   }
 
   body {
+    font-family: "Noto Sans KR";
     padding-top: ${(props) => props.theme.boxSize.header};
     font-size: ${(props) => props.theme.fontSize.normal};
     line-height: 1.375rem;
