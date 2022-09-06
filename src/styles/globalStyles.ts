@@ -8,11 +8,6 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
 
   @font-face {
-    font-family: "NanumSquareR";
-    src: local("NanumSquareR"), url(${NanumSquareR}) format('woff');
-  }
-
-  @font-face {
     font-family: "Noto Sans KR";
     src: local("NotoSansKR"), url(${NotoSansKR}) format('woff2'),
       local("NotoSansKR"), url(${NotoSansKR}) format('woff'),
