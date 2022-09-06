@@ -1,9 +1,6 @@
 import { RefObject, useEffect } from "react";
 
 export default function useSwipe(swipeRef: RefObject<HTMLElement>) {
-  const listClientWidth = swipeRef.current ? swipeRef.current.clientWidth : 0;
-  const listScrollWidth = swipeRef.current ? swipeRef.current.scrollWidth : 0;
-
   let isSwiping = false;
   let startX = 0;
   let nowX = 0;
@@ -54,21 +51,21 @@ export default function useSwipe(swipeRef: RefObject<HTMLElement>) {
   const onMouseEnd = () => {
     if (!swipeRef.current) return;
 
+    const listClientWidth = swipeRef.current.clientWidth;
+    const listScrollWidth = swipeRef.current.scrollWidth;
+
     isSwiping = false;
     startPoint = getTranslateX();
-
-    console.log(listClientWidth, listScrollWidth, startPoint);
 
     if (startPoint > 0) {
       setTranslateX(0);
       swipeRef.current.style.transition = `all 0.3s ease`;
       startPoint = 0;
+    } else if (startPoint < listClientWidth - listScrollWidth) {
+      setTranslateX(listClientWidth - listScrollWidth);
+      swipeRef.current.style.transition = `all 0.3s ease`;
+      startPoint = listClientWidth - listScrollWidth;
     }
-    // else if (startPoint < listClientWidth - listScrollWidth) {
-    //   setTranslateX(listClientWidth - listScrollWidth);
-    //   swipeRef.current.style.transition = `all 0.3s ease`;
-    //   startPoint = listClientWidth - listScrollWidth;
-    // }
 
     swipeRef.current.removeEventListener("mousedown", onMouseStart);
     swipeRef.current.removeEventListener("mouseup", onMouseEnd);
